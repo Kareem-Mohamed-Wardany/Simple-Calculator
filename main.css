@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+.calcbody {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  background-color: #205b7a;
+  width: 350px;
+  height: 500px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.calcbody .title {
+  display: flex;
+  justify-content: space-between;
+}
+.calcbody .title .Logo {
+  color: #000;
+  padding-left: 25px;
+}
+.calcbody .title .version {
+  color: #000;
+  padding-right: 25px;
+}
+.calcbody .screen {
+  margin-left: 10px;
+  width: 330px;
+  height: 100px;
+  font-size: 40px;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.calcbody .screen .old {
+  color: #142f44;
+  background-color: #a2bbcf;
+  height: 50px;
+  font-size: 40px;
+  overflow: hidden;
+}
+.calcbody .screen .current {
+  color: #142f44;
+  background-color: #a2bbcf;
+  height: 50px;
+  font-size: 40px;
+  overflow: hidden;
+}
+.calcbody .numberdiv {
+  display: flex;
+  width: 210px;
+  height: 300px;
+  padding-left: 10px;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-end;
+}
+.calcbody .numberdiv button {
+  background-color: #142f44;
+  color: #a2bbcf;
+  outline: none;
+  border: none;
+  width: 60px;
+  height: 50px;
+  padding: 15px;
+  margin: 2px;
+  font-size: 20px;
+}
+.calcbody .opdiv {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 130px;
+  height: 180px;
+  top: 223px;
+  left: 210px;
+}
+.calcbody .opdiv button {
+  background-color: #142f44;
+  color: #a2bbcf;
+  outline: none;
+  border: none;
+  width: 60px;
+  height: 50px;
+  padding: 15px;
+  margin-bottom: 4px;
+  margin-right: 5px;
+  font-size: 20px;
+}/*# sourceMappingURL=main.css.map */

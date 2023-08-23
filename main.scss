@@ -1,0 +1,97 @@
+// Import Global rules
+@use './sass/layout/global-rules' as *;
+
+// Import Variables
+@use './sass/variables/colors' as *;
+
+// Import Mixins
+@use './sass/helpers/mixins' as *;
+
+.calcbody {
+  @include center;
+  background-color: $bodycolor;
+  width: 350px;
+  height: 500px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  .title {
+    display: flex;
+    justify-content: space-between;
+    .Logo {
+      color: $Titlecolor;
+      padding-left: 25px;
+    }
+    .version {
+      color: $Titlecolor;
+      padding-right: 25px;
+    }
+  }
+  .screen {
+    margin-left: 10px;
+    width: 330px;
+    height: 100px;
+    font-size: 40px;
+    overflow: hidden;
+    user-select: none;
+    .old {
+      color: $buttoncolor;
+      background-color: $Screencolor;
+      height: 50px;
+      font-size: 40px;
+      overflow: hidden;
+    }
+    .current {
+      color: $buttoncolor;
+      background-color: $Screencolor;
+      height: 50px;
+      font-size: 40px;
+      overflow: hidden;
+    }
+  }
+  .numberdiv {
+    display: flex;
+    width: 210px;
+    height: 300px;
+    padding-left: 10px;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    button {
+      background-color: $buttoncolor;
+      color: $Screencolor;
+      outline: none;
+      border: none;
+      width: 60px;
+      height: 50px;
+      padding: 15px;
+      margin: 2px;
+      font-size: 20px;
+    }
+  }
+  .opdiv {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 130px;
+    height: 180px;
+    top: 223px;
+    left: 210px;
+    button {
+      background-color: $buttoncolor;
+      color: $Screencolor;
+      outline: none;
+      border: none;
+      width: 60px;
+      height: 50px;
+      padding: 15px;
+      margin-bottom: 4px;
+      margin-right: 5px;
+      font-size: 20px;
+    }
+  }
+}
